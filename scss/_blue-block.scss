@@ -1,0 +1,21 @@
+.blue-block {
+  display: grid;
+  height: 259px;
+  background-color: #88B5BF;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 199px;
+  margin-top: 15px;
+  gap: 30px;
+  margin-bottom: 100px;
+  .blue {
+    margin-top: 30px;
+    height: 100%;
+    background-color: #0D89B0;
+    &:first-child {
+      margin-left: 30px;
+    }
+    &:last-child {
+      margin-right: 30px;
+    }
+  }
+}

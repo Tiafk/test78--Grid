@@ -1,0 +1,19 @@
+.green-block {
+  display: grid;
+  grid-template-columns: 30% 50% 17.36%;
+  grid-template-rows: 196px 196px;
+  gap: 15px;
+  background-color: #B3F95A;
+  max-width: 100%;
+  .green {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    font-size: 53px;
+    background-color: #8AD191;
+  }
+  .item_4 {
+    grid-column: 1/3;
+  }
+}

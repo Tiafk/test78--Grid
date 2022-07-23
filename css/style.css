@@ -1,0 +1,155 @@
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 1200px;
+  background-color: #C0DBD9;
+  align-items: center;
+  padding: 0 15px;
+}
+
+body .main .container {
+  width: 100%;
+  overflow: hidden;
+}
+
+body .main .container .header {
+  display: flex;
+  height: 100px;
+  background-color: #7FAFF6;
+  margin-bottom: 15px;
+}
+
+body .main .container .header .btn {
+  display: flex;
+  height: 39px;
+  align-items: center;
+  line-height: 23;
+  padding: 0px 15px;
+  background-color: #A5C7F9;
+  border: 0;
+  border-radius: 5px;
+  margin: 30px 0px 0px 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.background {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.background.active {
+  display: block;
+}
+
+.pop-up {
+  display: none;
+  position: absolute;
+  top: 100px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  justify-self: center;
+}
+
+.pop-up .content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 43px;
+  height: 39px;
+  border-radius: 5px;
+  background-color: #7FAFF6;
+  background-image: url(../img/X.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pop-up .text {
+  line-height: 62px;
+  font-weight: 400;
+  font-size: 53px;
+}
+
+.pop-up.active {
+  display: flex !important;
+}
+
+.green-block {
+  display: grid;
+  grid-template-columns: 30% 50% 17.36%;
+  grid-template-rows: 196px 196px;
+  gap: 15px;
+  background-color: #B3F95A;
+  max-width: 100%;
+}
+
+.green-block .green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 53px;
+  background-color: #8AD191;
+}
+
+.green-block .item_4 {
+  grid-column: 1/3;
+}
+
+.blue-block {
+  display: grid;
+  height: 259px;
+  background-color: #88B5BF;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 199px;
+  margin-top: 15px;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.blue-block .blue {
+  margin-top: 30px;
+  height: 100%;
+  background-color: #0D89B0;
+}
+
+.blue-block .blue:first-child {
+  margin-left: 30px;
+}
+
+.blue-block .blue:last-child {
+  margin-right: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #7FAFF6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
